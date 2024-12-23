@@ -1,4 +1,14 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+.page {
+  color: var(--text-color);
+  font-family: var(--main-font), sans-serif;
+  font-size: 18px;
+  background-image: var(--cover-image);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .grid {
   display: grid;
@@ -238,17 +248,6 @@ align-self: center;
   line-height: 82.5%;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--title-color);
-}
-
-.page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  position: relative;
-  background-color: var(--bg-color);
-  background-image: var(--bgc-image);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 @media (min-width: 768px) {
